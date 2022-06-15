@@ -1,0 +1,13 @@
+write a programe to find sum of squares of roots
+
+class Example03
+  {
+    public static void main (String args[]){
+      int s = 5;
+      int p = s*s;
+      int a = 10;
+      int b = a*a;
+      int x = b+p;
+      System.out.println("Sum of squares is: "+x);
+    }
+  }
