@@ -1,0 +1,13 @@
+10. write programme to find perimeter of rectangle.
+
+class Perimeter
+  {
+    public static void main(String args[])
+    {
+      int a = 20;
+      int b = 5;
+      int perimeter;
+      perimeter = 2*(a+b);
+      System.out.println("Perimeter of a rectangle is: "+perimeter);
+    }
+  }

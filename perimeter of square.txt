@@ -1,0 +1,11 @@
+9. Write a programme to find Perimeter of a square
+
+class PerimeterofSquare
+  {
+    public static void main (String args[]){
+      int s = 4;
+      int perimeter;
+      perimeter = 4*s;
+      System.out.println("Perimeter of square is: "+perimeter);
+    }
+  }

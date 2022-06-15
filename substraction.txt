@@ -1,0 +1,10 @@
+2.write a programme to subtracting of two numbers
+
+class Subtraction {
+    public static void main(String[] args) {
+        int a=30,b=10;
+        int c=a-b;
+        System.out.println("c="+c); 
+    }
+}
+
