@@ -1,0 +1,1523 @@
+1. Write a JAVA program to find maximum between two numbers.
+public class Main {
+ 
+    public static void main(String args[]) {
+      int a=20;
+      int b=10;
+      if(a<b)
+        System.out.println("b is greater than a");
+      else
+        System.out.println("a is greater than b");
+ 
+    }
+}
+======================================================================
+2. Write a JAVA program to find maximum between three numbers.
+public class Main {
+ 
+    public static void main(String args[]) {
+      int a=20;
+      int b=10;
+      int c=30;
+      if(a>b && a>c)
+        System.out.println("a is maximum number");
+      else if(b>a && b>c)
+        System.out.println("b is maximum number");
+      else
+        System.out.println("c is maximum number");
+ 
+    }
+}
+======================================================================
+3. Write a JAVA program to check whether a number is negative, positive or zero.
+import java.util.*;
+public class Main {
+ 
+    public static void main(String args[]) {
+      Scanner sc=new Scanner(System.in);
+      System.out.println("Enter a number");
+      int a=sc.nextInt();
+      if(a==0)
+        System.out.println("Entered number is zero");
+      else if(a<0)
+        System.out.println("Entered number is negative");
+      else
+        System.out.println("Entered number is positive");
+ 
+    }
+}
+======================================================================
+4. Write a JAVA program to check whether a number is divisible by 5 and 11 or not.
+import java.util.*;
+public class Main {
+ 
+    public static void main(String args[]) {
+      Scanner sc=new Scanner(System.in);
+      System.out.println("Enter a number");
+      int a=sc.nextInt();
+      if(a%5==0 && a%11==0)
+        System.out.println("Entered number is devisible by 5 and 11");
+     
+      else
+        System.out.println("can not be devided by 5 and 11");
+ 
+    }
+}
+======================================================================
+5. Write a JAVA program to check whether a number is even or odd.
+import java.util.*;
+public class Main {
+ 
+    public static void main(String args[]) {
+      Scanner sc=new Scanner(System.in);
+      System.out.println("Enter a number");
+      int a=sc.nextInt();
+      if(a%2==0)
+        System.out.println("Entered number is even");
+     
+      else
+        System.out.println("Entered number is odd");
+ 
+    }
+}
+======================================================================
+6. Write a JAVA program to check whether a year is leap year or not.
+/* step 1.     If the year is evenly divisible by 4, go to step 2. Otherwise, go to step 5.
+     step 2.     If the year is evenly divisible by 100, go to step 3. Otherwise, go to step 4.
+     step 3.     If the year is evenly divisible by 400, go to step 4. Otherwise, go to step 5.
+     step 4.     The year is a leap year (it has 366 days).
+     step 5.     The year is not a leap year (it has 365 days).*/
+import java.util.*;
+public class Main {
+ 
+  public static void main(String[] args) {
+      Scanner sc=new Scanner(System.in);
+      System.out.println("Enter a year");
+      int year =sc.nextInt();
+    boolean leap = false;
+    if (year % 4 == 0) {
+      if (year % 100 == 0) {
+        if (year % 400 == 0)
+          leap = true;
+        else
+          leap = false;
+      }
+ 
+      else
+        leap = true;
+    }
+    
+    else
+      leap = false;
+ 
+    if (leap)
+      System.out.println(year + " is a leap year.");
+    else
+      System.out.println(year + " is not a leap year.");
+  }
+}
+======================================================================
+7. Write a JAVA program to check whether a character is alphabet or not.
+import java.util.*;
+public class Main {
+ 
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter a Character");
+        char c =sc.next().charAt(0);
+ 
+        if( (c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
+            System.out.println(c + " is an alphabet.");
+        else
+            System.out.println(c + " is not an alphabet.");
+    }
+}
+======================================================================
+
+8. Write a JAVA program to input any alphabet and check whether it is vowel or    consonant.
+import java.util.*;
+public class Main {
+ 
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter a Character");
+        char c =sc.next().charAt(0);
+ 
+        if( (c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z')){
+            if(c=='a' || c=='e' || c=='i' || c=='o' || c=='u' || c=='A' || c=='E' || c=='I' || c=='O' || c=='U'){
+                System.out.println("Entered Character is vowel");
+            }
+            else{
+                 System.out.println("Entered Character is consonant");
+            }
+            
+        }
+            
+        else
+            System.out.println(c + " is not an alphabet.");
+    }
+}
+======================================================================
+9. Write a JAVA program to input any character and check whether it is alphabet, digit    or special character.
+import java.util.*;
+ 
+public class Main {
+ 
+    public static void main(String[] args) {
+ 
+        Scanner sc = new Scanner(System.in);
+ 
+        System.out.println("Enter any caracter : ");
+        char ch = sc.next().charAt(0);
+ 
+        if((ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z')) {
+ 
+             System.out.println(ch + " is A ALPHABET.");
+ 
+        }
+        else if(ch >= '0' && ch <= '9') {
+ 
+             System.out.println(ch + " is A DIGIT.");
+ 
+        } else {
+ 
+             System.out.println(ch + " is A SPECIAL CHARACTER.");
+        }
+    
+    }
+}
+======================================================================
+10. Write a JAVA program to check whether a character is uppercase or lowercase     alphabet.
+import java.util.*; 
+public class Main { 
+    public static void main(String[] args) { 
+        Scanner sc = new Scanner(System.in); 
+        System.out.println("Enter any caracter : "); 
+        char ch = sc.next().charAt(0); 
+        if((ch >= 'a' && ch <= 'z')) { 
+            System.out.println(ch + " is in lowercase."); 
+        } 
+        
+        else if((ch >= 'A' && ch <= 'Z')) { 
+            System.out.println(ch + " is in uppercase."); 
+ 
+        }
+        else
+        
+            System.out.println("Please enter a Character");
+    } 
+ 
+}
+======================================================================
+11. Write a JAVA program to input week number and print week day.
+import java.util.Scanner;
+ 
+public class Main {
+ 
+    public static void main(String[] args) {
+ 
+        Scanner sc = new Scanner(System.in);
+ 
+        System.out.println("Enter weekday day number (1-7) : ");
+        int weekday = sc.nextInt();
+ 
+        if(weekday == 1) {
+ 
+            System.out.println("Monday");
+ 
+        } else if(weekday == 2) {
+ 
+            System.out.println("Tuesday");
+ 
+        } else if(weekday == 3) {
+ 
+            System.out.println("Wednesday");
+ 
+        } else if(weekday == 4) {
+ 
+            System.out.println("Thursday");
+ 
+        } else if(weekday == 5) {
+ 
+            System.out.println("Friday");
+ 
+        } else if(weekday == 6) {
+ 
+            System.out.println("Saturday");
+ 
+        } else if(weekday == 7) {
+ 
+            System.out.println("Sunday");
+ 
+        } else {
+ 
+            System.out.println("Please enter weekday number between 1-7.");
+        }
+ 
+    }
+}
+======================================================================
+12. Write a JAVA program to count total number of notes in given amount.
+import java.util.Scanner;
+ 
+public class Main {
+ 
+    public static void main(String[] args) {
+ 
+        Scanner sc = new Scanner(System.in);
+ 
+        System.out.println("Enter amount: ");
+        int amount = sc.nextInt();
+        int hCount=0;
+        int thCount=0;
+        int fhCount=0;
+        if(amount%500==0) {
+            fhCount=amount/500;
+            amount=amount-fhCount*500;
+            System.out.println("500 notes are:"+fhCount);
+        } 
+        if(amount%200==0) {
+            thCount=amount/200;
+            amount=amount-thCount*200;
+            System.out.println("200 notes are:"+thCount);
+        } 
+        if(amount%100==0) {
+            hCount=amount/100;
+            amount=amount-hCount*100;
+            System.out.println("100 notes are:"+hCount);
+        } 
+ 
+    }
+}
+======================================================================
+13. Write a JAVA program to input marks of five subjects Physics, Chemistry, Biology,     Mathematics and Computer. Calculate percentage and grade according to     following:
+    Percentage >= 90% : Grade A
+    Percentage >= 80% : Grade B
+    Percentage >= 70% : Grade C
+    Percentage >= 60% : Grade D
+    Percentage >= 40% : Grade E
+    Percentage < 40% : Grade F
+import java.util.*;
+class Perc
+  {
+    public static void main(String args[])
+    {
+      double a,b,c,d,e,maximum;
+      Scanner sc= new Scanner(System.in);
+      System.out.println("enter the marks");
+      a=sc.nextDouble();
+      b=sc.nextDouble();
+      c=sc.nextDouble();
+      d=sc.nextDouble();
+      e=sc.nextDouble();
+      System.out.println("enter maximum marks");
+      maximum=sc.nextDouble();
+      double total=a+b+c+d+e;
+      System.out.println("total marks"+total);
+      double percentage=(total/maximum)*100;
+      System.out.println("percentage is"+percentage);
+      int newpercentage=(int)percentage;
+      if(newpercentage>90)
+      {
+        System.out.println("the grade is a");
+      }
+      else if(newpercentage<90&&newpercentage>80)
+      {
+        System.out.println("the grade is b");
+      }
+      else if(newpercentage<80&&newpercentage>70)
+      {
+        System.out.println("the grade is c");
+      }
+      else if(newpercentage<70&&newpercentage>60)
+      {
+        System.out.println("the grade is d");
+      }
+      else
+      {
+        System.out.println("fail");
+      }
+        
+    }
+  }
+======================================================================
+14. Write a JAVA program to input basiJAVAsalary of an employee and calculate its Gross     salary according to following:
+    BasiJAVASalary <= 10000 : HRA = 20%, DA = 80%
+    BasiJAVASalary <= 20000 : HRA = 25%, DA = 90%
+    BasiJAVASalary > 20000 : HRA = 30%, DA = 95%
+/*Write a JAVA program to input basiJAVAsalary of an employee and calculate its Gross     salary according to following:
+BasiJAVASalary <= 10000 : HRA = 20%, DA = 80%
+BasiJAVASalary <= 20000 : HRA = 25%, DA = 90%
+BasiJAVASalary > 20000 : HRA = 30%, DA = 95%*/
+  
+import java.util.Scanner;
+class Salary
+  {
+    public static void main(String args[])
+    {
+      Scanner sc = new Scanner(System.in);
+      System.out.println("Enter the basic salary of an employee");
+      int basic = sc.nextInt();
+      float HRA, DA, gross_salary;
+      if(basic<=10000)
+      {
+        HRA = (20*basic)/100;
+        DA = (80*basic)/100;
+      }
+      else if(basic<=20000)
+      {
+        HRA = (25*basic)/100;
+        DA = (90*basic)/100;
+      }
+      else
+      {
+        HRA = (30*basic)/100;
+        DA = (95*basic)/100;
+      }
+      gross_salary = HRA+DA+basic;
+      System.out.println("Gross salary of an employee is: "+gross_salary);
+    }
+  }
+
+
+======================================================================
+15. Write a JAVA program to input electricity unit charges and calculate total     electricity bill according to the given condition:
+    For first 50 units Rs. 0.50/unit
+    For next 100 units Rs. 0.75/unit
+    For next 100 units Rs. 1.20/unit
+     For unit above 250 Rs. 1.50/unit
+     An additional surcharge of 20% is added to the bill
+/*
+Write a JAVA program to input electricity unit charges and calculate total     electricity bill according to the given condition:
+    For first 50 units Rs. 0.50/unit
+    For next 100 units Rs. 0.75/unit
+    For next 100 units Rs. 1.20/unit
+    For unit above 250 Rs. 1.50/unit
+  */
+import java.util.Scanner;
+class Electricity
+  {
+    public static void main(String args[])
+    {
+      Scanner sc = new Scanner(System.in);
+      System.out.println("enter no. of units");
+      int units=sc.nextInt();
+      Double bill,surcharge;
+      if(units<=50)
+      {
+        bill=0.5*units;
+      }
+      else if(units<=150&&units>50){
+        bill=(0.5*50)+(units-50)*0.75;
+      }
+      else if(units<=250&&units>150){
+        bill=(0.5*units)+(100*0.75)+(units-150)*1.2;
+      }
+      else{
+        bill=(0.5*50)+(100*0.75)+(100*1.2)*(units-250)*1.5;
+      }
+      surcharge=(bill/100)*20;
+      bill=bill+surcharge;
+      System.out.println("the bill for "+units+" is "+bill);
+    }
+  }
+======================================================================
+16. Write a JAVA program to print day of week name using switch case.
+import java.util.*;
+class Week{
+  public static void main(String args[]){
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter week number ");
+    int week=sc.nextInt();
+    switch(week) {
+      case 1:
+        System.out.println("sunday");
+        break;
+        case 2:
+        System.out.println("monday");
+        break;
+        case 3:
+        System.out.println("tuesday");
+        break;
+        case 4:
+        System.out.println("wednesday");
+        break;
+        case 5:
+        System.out.println("thursday");
+        break;
+        case 6:
+        System.out.println("friday");
+        break;
+        case 7:
+        System.out.println("saturday");
+        break;
+        default:
+        System.out.println("enter valid input");
+    }
+    
+  }
+  
+}
+======================================================================
+17. Write a JAVA program to print all natural numbers from 1 to n. - using while loop
+import java.util.*;
+class Naturalreverse{
+  public static void main(String args[]){
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter start value");
+    int a=sc.nextInt();
+    System.out.println("enter start value");
+    int b=sc.nextInt();
+     while(a<=n)
+       {
+         System.out.println(a);
+         a++;
+       }
+  }
+}
+======================================================================
+18. Write a JAVA program to print all natural numbers in reverse (from n to 1). -     using while loop
+import java.util.*;
+class Naturalreverse{
+  public static void main(String args[]){
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter start value");
+    int a=sc.nextInt();
+    System.out.println("enter start value");
+    int b=sc.nextInt();
+     while(a>=b)
+       {
+         System.out.println(a);
+         a--;
+       }
+  }
+}
+======================================================================
+19. Write a JAVA program to print all alphabets from a to z. - using while loop
+import java.util.*;
+class atoz{
+  public static void main(String args[]){
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter start value");
+    char n=sc.next().charAt(0);
+    System.out.println("enter n value");
+    char m=sc.next().charAt(0);
+    System.out.println(n+" - "+ m +" alphabets are");
+    while(n<=m){
+      System.out.println(n);
+      n++;
+    }
+  }
+}
+======================================================================
+20. Write a JAVA program to print all even numbers between 1 to 100. - using while     loop
+import java.util.*;
+class Evenloop{
+  public static void main(String args[]){
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter start number");
+    int a=sc.nextInt();
+    System.out.println("enter end number");
+    int b=sc.nextInt();
+    int i=a,sum=0;
+    while(i<=b){
+      if(i%2==0){
+        System.out.println(i);
+      }
+      i++;
+    }
+  }
+}
+======================================================================
+21. Write a JAVA program to print all odd number between 1 to 100.
+import java.util.*;
+class Addloop{
+  public static void main(String args[]){
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter start number");
+    int a=sc.nextInt();
+    System.out.println("enter end number");
+    int b=sc.nextInt();
+    int i=a,sum=0;
+    while(i<=b){
+      if(i%2==1){
+        System.out.println(i);
+      }
+      i++;
+    }
+  }
+}
+======================================================================
+22. Write a JAVA program to find sum of all natural numbers between 1 to n.
+import java.util.*;
+class Naturamsum{
+  public static void main(String args[]){
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter start number");
+    int a=sc.nextInt();
+    System.out.println("enter end number");
+    int b=sc.nextInt();
+    int sum=0;
+    while(a<=b){
+     
+        sum=sum+a;
+      
+      a++;
+    }
+    System.out.println("sum of all natural numbers = "+sum);
+  }
+}
+======================================================================
+23. Write a JAVA program to find sum of all even numbers between 1 to n.
+import java.util.*;
+class Evensum{
+  public static void main(String args[]){
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter start number");
+    int a=sc.nextInt();
+    System.out.println("enter end number");
+    int b=sc.nextInt();
+    int i=a,sum=0;
+    while(i<=b){
+      if(i%2==0){
+        sum=sum+i;
+      }
+      i++;
+    }
+    System.out.println("sum of all even numbers = "+sum);
+  }
+}
+======================================================================
+24. Write a JAVA program to find sum of all odd numbers between 1 to n.
+import java.util.*;
+class oddsum{
+  public static void main(String args[]){
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter start number");
+    int a=sc.nextInt();
+    System.out.println("enter end number");
+    int b=sc.nextInt();
+    int i=a,sum=0;
+    while(i<=b){
+      if(i%2==1){
+        sum=sum+i;
+      }
+      i++;
+    }
+    System.out.println("sum of all even numbers = "+sum);
+  }
+}
+======================================================================
+25. Write a JAVA program to print multiplication table of any number.
+class Tableloop{
+  public static void main(String args[]){
+    int i,n=5,table;
+    for(i=1;i<=10;i++){
+      table=n*i;
+      System.out.println(n+" * "+i+" = "+table);
+    }
+    
+  }
+}
+======================================================================
+26. Write a JAVA program to count number of digits in a number.
+import java.util.*;
+class findnoofdigit
+{
+public static void main(String args[])
+{
+int i=1,n,count=0;
+System.out.println("enter number");
+Scanner sc=new Scanner(System.in);
+n=sc.nextInt();
+while(n!=0)
+{
+n=n/10;
+count++;
+}
+System.out.println(count);
+}
+}
+
+======================================================================
+27. Write a JAVA program to find first and last digit of a number.
+import java.util.*;
+class firstandlastdigit{
+  public static void main(String args[]){
+    int n;
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter number");
+    n=sc.nextInt();
+    int lastdigit=n%10;
+    while(n>10){
+      n=n/10;
+    }
+    System.out.println("last digit of number is "+lastdigit);
+    System.out.println("first digit of number is "+n);
+  }
+}
+======================================================================
+28. Write a JAVA program to find sum of first and last digit of a number.
+import java.util.*;
+class firstandlastdigit{
+  public static void main(String args[]){
+    int n;
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter number");
+    n=sc.nextInt();
+    int lastdigit=n%10;
+    while(n>10){
+      n=n/10;
+    }
+    int sum=n+lastdigit;
+    System.out.println(sum);
+  }
+}
+======================================================================
+29. Write a JAVA program to check whether a number is palindrome or not.
+import java.util.*;
+class Polindrom
+{
+  public static void main(String args[]){
+    int n, reminder, order=0;
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter number");
+    n=sc.nextInt();
+    int firstorder=n;
+    while(n!=0){
+      reminder=n%10;
+      order=order*10+reminder;
+      n=n/10;
+    }
+    if(order==firstorder){
+      System.out.println("given number is polindrom");
+    }
+    else{
+      System.out.println("given number is not a polindrom");
+    }
+  }
+}
+======================================================================
+30. Write a JAVA program to calculate sum of digits of a number.
+import java.util.*;
+class firstandlastdigit{
+  public static void main(String args[]){
+    int n,sum=0;
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter number");
+    n=sc.nextInt();
+    while(n!=0){
+      sum=sum+n%10;
+      n=n/10;
+    }
+    System.out.println(sum);
+  }
+}
+======================================================================
+31. Write a JAVA program to calculate product of digits of a number.
+import java.util.*;
+class Productofdigits{
+  public static void main(String args[]){
+    int n,sum=1;
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter number");
+    n=sc.nextInt();
+    while(n!=0){
+      sum=sum*(n%10);
+      n=n/10;
+    }
+    System.out.println(sum);
+  }
+}
+======================================================================
+32. Write a JAVA program to enter a number and print its reverse.
+import java.util.*;
+class firstandlastdigit{
+  public static void main(String args[]){
+    int n;
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter number");
+    n=sc.nextInt();
+    int reverse=0;
+    while(n>0){
+      reverse=(reverse*10)+(n%10);
+      
+      n=n/10;
+    }
+    System.out.println(reverse);
+  }
+}
+
+======================================================================
+33. Write a JAVA program to find frequency of each digit in a given integer.
+import java.util.*;
+class frequency
+{
+public static void main(String args[])
+{
+int i=1,n,count,reminder;
+System.out.println("enter number");
+Scanner sc=new Scanner(System.in);
+n=sc.nextInt();
+  for(i=0;i<10;i++)
+    {
+      count=0;
+      int n1=n;
+while(n1!=0)
+{
+  reminder=n%10;
+  if(i==n1%10)
+  {
+    count++;
+  }
+n1=n1/10;
+}
+      if(count>0)
+      {
+      System.out.println(i+"-"+count);
+      }
+}
+}
+}
+======================================================================
+34. Write a JAVA program to enter a number and print it in words.
+
+======================================================================
+35. Write a JAVA program to print all ASCII character with their values.
+import java.util.*;
+public class Asciivalue
+{  
+public static void main(String[] args)   
+{  
+// character whose ASCII value to be found  
+  Scanner sc=new Scanner(System.in);
+  System.out.println("enter array size");
+  int n=sc.nextInt();
+  char arr[]=new char[n];
+  // variable that stores the integer value of the character  
+  System.out.println("enter values");
+  for(int i=0;i<arr.length;i++)
+    {
+      arr[i]=sc.next().charAt(0);
+    }
+  for(int i=0;i<arr.length;i++)
+    {
+      int ascii=arr[i];
+      System.out.println("the ascii value of"+arr[i]+" is "+ascii);
+    }
+  
+}  
+}
+======================================================================
+36. Write a JAVA program to find power of a number using for loop.
+import java.util.Scanner;
+
+public class Power {
+   public static void main(String args[]){
+     int power=1;;
+      Scanner sc = new Scanner(System.in);
+      System.out.println("Enter a number ::");
+      int n = sc.nextInt();
+     System.out.println("Enter power value :");
+      int p = sc.nextInt();
+      for(int i=0;i<p;i++)
+        {
+          power=power*n;
+        }
+     System.out.println(n+"^"+p+" is "+power);
+   }
+}
+======================================================================
+37. Write a JAVA program to find all factors of a number.
+import java.util.*;
+class Factor{
+  public static void main(String args[]){
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter a value");
+    int a=sc.nextInt();
+    for(int i=1;i<=a/2;i++){
+      if(a%i==0){
+    System.out.println(i);
+    }
+    }
+    
+  }
+}
+======================================================================
+38. Write a JAVA program to calculate factorial of a number.
+import java.util.*;
+class Factorial{
+  public static void main(String args[]){;
+    int fact=1;
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter a value");
+    int a=sc.nextInt();
+    for(int i=1;i<=a;i++){
+    fact=fact*i;
+    }
+    System.out.println("factorial of "+a+" is "+fact);
+  }
+}
+======================================================================
+39. Write a JAVA program to check whether a number is Prime number or not.
+import java.util.*;
+class Primeornot{
+  public static void main(String args[]){
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter a value");
+    int a=sc.nextInt();
+    int count=0;
+    for(int i=1;i<=a/2;i++)
+    {
+      if(a%i==0){
+        count++;
+    }
+    }
+    if(count>1)
+    {
+      System.out.println("given number is prime number");
+    }
+    else
+    {
+      System.out.println("given number is not a prime number");
+    }
+  }
+}
+======================================================================
+40. Write a JAVA program to print all Prime numbers between 1 to n.
+import java.util.*;
+class Primebetweentwonumbers{
+  public static void main(String args[]){
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter a value");
+    int a=sc.nextInt();
+    System.out.println("enter b value");
+    int b=sc.nextInt();
+    for(int i=a;i<=b;i++)
+    {
+      int count=0;
+      for(int j=1;j<=i/2;j++){
+      if(i%j==0){
+        count++;
+    }   
+    }
+    if(count<=1)
+    {
+      System.out.println(i);
+    }
+    }       
+  }
+}
+======================================================================
+41. Write a JAVA program to find sum of all prime numbers between 1 to n.
+//find prime number between 2 numbers
+import java.util.*;
+class Primebetweentwonumbers{
+  public static void main(String args[]){
+    int sum=0;
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter start value");
+    int a=sc.nextInt();
+    System.out.println("enter end value");
+    int b=sc.nextInt();
+    for(int i=a;i<=b;i++)
+    {
+      int count=0;
+      for(int j=1;j<=i/2;j++){
+      if(i%j==0){
+        count++;
+    }   
+    }
+    if(count<=1)
+    {
+      sum=sum+i;
+    }
+    }
+    System.out.println(sum);
+  }
+}
+//
+  
+======================================================================
+42. Write a JAVA program to find all prime factors of a number.
+import java.util.Scanner;
+
+public class Primefactor {
+   public static void main(String args[]){
+      int number;
+      Scanner sc = new Scanner(System.in);
+      System.out.println("Enter a number ::");
+      number = sc.nextInt();
+     
+      for(int i = 2; i<number; i++) {
+         while(number%i == 0) {
+            System.out.println(i+" ");
+            number = number/i;
+         }
+      }
+      if(number>2) {
+         System.out.println(number);
+      }
+   }
+}
+
+======================================================================
+43. Write a JAVA program to check whether a number is Armstrong number or not.
+import java.util.*;
+class Armstrong
+{
+  public static void main(String args[]){
+    int n, reminder;
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter number");
+    n=sc.nextInt();
+    int input=n, count=0, sum=0;
+   while(n>0) {
+     count++;
+      n=n/10;
+      }
+    n=input;
+    while(n!=0){        
+      reminder=n%10;
+      sum+=Math.pow(reminder,count);
+      n=n/10;
+    }
+    n=input;
+    if(sum==n){
+      System.out.println(n+" is a armstrong number");
+    }
+    else{
+      System.out.println(n+" is not a armstrong number");
+    }
+  }
+}
+======================================================================
+44. Write a JAVA program to print all Armstrong numbers between 1 to n.
+import java.util.*;
+class Armbetweengiven
+{
+  public static void main(String args[]){
+    int n, reminder, a, b, temp=0, count=0, sum=0;
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter start number");
+    a=sc.nextInt();
+    System.out.println("enter end number");
+    b=sc.nextInt();
+    for(int i=a;i<=b;i++){
+       temp=i;
+      count=0;
+      while(temp>0){
+        temp=temp/10;
+        count++;
+      }
+    n=i;
+     sum=0;
+    while(n>0){
+      reminder=n%10;
+      sum+=Math.pow(reminder,count);
+      n=n/10;
+    }
+    if(sum==i){
+      System.out.println(i+" is a armstrong number");
+    }
+    }
+  }
+}
+======================================================================
+45. Write a JAVA program to check whether a number is Perfect number or not.
+import java.util.*;
+
+class Perfect {
+  public static void main(String args[]) {
+    Scanner sc = new Scanner(System.in);
+    System.out.println("enter a number");
+    int n = sc.nextInt();
+    int sum = 0;
+    for (int i = 1; i <= n/2; i++) {
+      if (n % i == 0) {
+        sum = sum + i;
+      }
+    }
+    if (sum == n) {
+      System.out.println("given number is a perfect number");
+    } else {
+      System.out.println("given number is not a perfect number");
+    }
+  }
+}
+======================================================================
+46. Write a JAVA program to print all Perfect numbers between 1 to n.
+import java.util.*;
+
+class Perfect {
+  public static void main(String args[]) {
+    Scanner sc = new Scanner(System.in);
+    System.out.println("enter start value");
+    int n = sc.nextInt();
+    System.out.println("enter end value");
+    int m = sc.nextInt();
+    int sum;
+    for(int j=n;j<=m;j++)
+      {
+        sum=0;
+    for (int i = 1; i <= j/2; i++) {
+      if (j % i == 0) {
+        sum = sum + i;
+      }
+    }
+    if (sum == j) {
+      System.out.println(j+" is a perfect number");
+    } else {
+      System.out.println(j+" is not a perfect number");
+    }
+      }
+  }
+}
+======================================================================
+47. Write a JAVA program to check whether a number is Strong number or not.
+import java.util.*;
+class Strong{
+  public static void main(String args[]){
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter n value");
+    int n=sc.nextInt();
+    int input=n ;
+    int fact, sum=0;
+    while(input>0)
+    {
+     int reminder=input%10;
+      fact=1;
+      int j=1;
+    while(j<=reminder)
+      {
+        //3!=1*2*3
+        fact=fact*j;
+        j++;
+    }
+      sum=sum+fact;
+      input=input/10;
+    }
+    if(sum==n){
+      System.out.println("given number is Strong number");
+    }
+    else{
+      System.out.println("given number is not a Strong number");
+    }
+  }
+}
+======================================================================
+48. Write a JAVA program to print all Strong numbers between 1 to n.
+import java.util.*;
+class Strong{
+  public static void main(String args[]){
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter n value");
+    int n=sc.nextInt();
+    System.out.println("enter m value");
+    int m=sc.nextInt();
+    int input,fact,sum;
+    for(int i=n;i<=m;i++)
+      {
+        input=i;
+        sum=0;
+    while(input!=0)
+    {
+     int reminder=input%10;
+      fact=1;
+      int j=1;
+    while(j<=reminder)
+      {
+        //3!=1*2*3
+        fact=fact*j;
+        j++;
+    }
+      sum=sum+fact;
+      input=input/10;
+    }
+    if(sum==i){
+      System.out.println(i+"given number is Strong number");
+    }
+    }
+  }
+}
+======================================================================
+49. Write a JAVA program to print Fibonacci series up to n terms
+import java.util.*;
+class Fibonacci{  
+public static void main(String args[])  
+{    
+   Scanner sc=new Scanner(System.in);
+   System.out.println("enter first value");
+   int n1=sc.nextInt();
+  System.out.println("enter second value");
+   int n2=sc.nextInt();
+  System.out.println("enter end value");
+   int end=sc.nextInt();
+  int n3;
+ System.out.print(n1+" "+n2);//printing 0 and 1       
+ for(int i=2;i<=end;i++)//loop starts from 2 because 0 and 1 are already printed    
+ {    
+  n3=n1+n2;
+  System.out.print(" "+n3);    
+  n1=n2;
+  n2=n3;    
+ }
+}
+}
+======================================================================
+50. Write a JAVA program to print all negative elements in an array.
+ import java.util.*;
+class Negative
+  {
+    public static void main(String args[])
+    {
+    int n;
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter array size");
+      n=sc.nextInt();
+    int a[]=new int[n];
+      System.out.println("enter array elements");
+      for(int i=0;i<n;i++)
+        {
+          a[i]=sc.nextInt();
+        }
+      System.out.println("Even elements are");
+      for(int i=0;i<n;i++)
+        {
+          if(a[i]<0){
+            System.out.println(a[i]);
+        }
+    }
+  }
+  }
+======================================================================
+51. Write a JAVA program to find second largest element in an array.
+// Write a JAVA program to find second largest element in an array. 
+
+import java.util.Scanner;
+class Secondmax
+  {
+    public static void main(String args[])
+    {
+      Scanner sc = new Scanner(System.in);
+      System.out.println("Enter the size");
+      int n = sc.nextInt();
+      System.out.println("Enter the elements");
+      int arr[] = new int[n];
+      for(int i=0; i<n; i++)
+        {
+          arr[i] = sc.nextInt();
+        }
+      int max = 0;
+      int secmax = 0;
+      for(int i=0; i<arr.length; i++)
+        {
+          if(max<arr[i])
+          {
+            secmax = max;
+            max = arr[i];
+          }
+          else if(secmax<arr[i])
+          {
+            secmax = arr[i];
+          }
+        }
+      System.out.println("Second max elements : "+secmax);
+    }
+  }
+
+======================================================================
+52. Write a JAVA program to find maximum and minimum element in an array. 
+import java.util.*;
+class Min{
+  public static void main(String args[]){
+    int n, i;
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter Array size");
+    n=sc.nextInt();
+    System.out.println("enter elements");
+    int a[]=new int[n];
+    for( i=0;i<n;i++)
+      {
+        a[i]=sc.nextInt();
+      }
+    int minimum=a[0];
+    System.out.println("minimum value is");
+    for(i=0;i<n;i++){
+      if(a[i]<minimum)
+        minimum=a[i];
+    }
+    System.out.println(minimum);
+  }
+}
+======================================================================
+53. Write a JAVA program to count total number of even and odd elements in an 
+array.
+ import java.util.*;
+class Countevenodd
+  {
+    public static void main(String args[])
+    {
+    int n,count1=0,count2=0;
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter array size");
+      n=sc.nextInt();
+    int a[]=new int[n];
+    int b[]=new int[n];
+    
+      System.out.println("enter array elements");
+      for(int i=0;i<n;i++)
+        {
+          a[i]=sc.nextInt();
+        }
+      System.out.println("Even elements are");
+      for(int i=0;i<n;i++)
+        {
+          if(a[i]%2==0){
+            count1++;
+            
+        }
+        }
+       System.out.println(count1);
+          for(int i=0;i<n;i++)
+        {
+          if(a[i]%2!=0){
+            count2++;
+          }
+        }
+            System.out.println(count2);
+  }
+  }
+======================================================================
+54. Write a JAVA program to count total number of negative elements in an 
+array.
+import java.util.*;
+class Negative
+  {
+    public static void main(String args[])
+    {
+    int n,count=0;
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter array size");
+      n=sc.nextInt();
+    int a[]=new int[n];
+      System.out.println("enter array elements");
+      for(int i=0;i<n;i++)
+        {
+          a[i]=sc.nextInt();
+        }
+      System.out.println("Even elements are");
+      for(int i=0;i<n;i++)
+        {
+          if(a[i]<0){
+            count++;
+        }
+    }
+  }
+  }
+======================================================================
+55. Write a JAVA program to copy all elements from an array to another array.
+ import java.util.*;
+class Even
+  {
+    public static void main(String args[])
+    {
+    int n;
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter array size");
+      n=sc.nextInt();
+    int a[]=new int[n];
+    int b[]=new int[n];
+    
+      System.out.println("enter array elements");
+      for(int i=0;i<n;i++)
+        {
+          a[i]=sc.nextInt();
+        }
+      System.out.println("Even elements are");
+      for(int i=0;i<n;i++)
+        {
+          b[i]=a[i];
+          System.out.println(b[i]);
+        } 
+    }
+  }
+  
+======================================================================
+56. Write a JAVA program to delete an element from an array at specified 
+position.
+import java.util.Scanner;
+class Deletion
+  {
+    public static void main(String args[])
+    {
+      Scanner sc = new Scanner(System.in);
+      System.out.println("Enter the size");
+      int n = sc.nextInt();
+      System.out.println("Enter the elements");
+      int arr[] = new int[n];
+      for(int i=0; i<n; i++)
+        {
+          arr[i] = sc.nextInt();
+        }
+      System.out.println("Enter the index value");
+      int index = sc.nextInt();
+      for(int i=index; i<arr.length-1; i++)
+        {
+          arr[i]=arr[i+1];
+        }
+      System.out.println("After deletion");
+      for(int i=0; i<arr.length-1; i++)
+        {
+          System.out.println(arr[i]);
+        }
+    }
+    }
+
+======================================================================
+57. Write a JAVA program to count frequency of each element in an array.
+//find duplicate numbers in array
+import java.util.*;
+class Frequency
+{ 
+    public static void main(String[] args)
+    {    
+       int count;
+       Scanner sc=new Scanner(System.in);
+       System.out.println("enter array size");
+       int n=sc.nextInt();
+       int arr[]=new int[n];
+       System.out.println("enter elements");
+       for(int i=0;i<n;i++)
+       {
+          arr[i]=sc.nextInt();
+       }
+      
+      int max=0;
+      for(int i=0;i<n;i++)
+       {
+          if(max<arr[i]){
+            max=arr[i];
+          }
+       }
+System.out.println("frequency of numbers");
+      for(int i=0;i<=max;i++)
+        {
+          count=0;
+          for(int j=0;j<n;j++)
+            {
+              if(i==arr[j])
+              {
+                count++;
+              }
+              }
+          if(count>0)
+              {
+                System.out.println(i+"-"+count);
+              }
+              }
+              
+            }
+        }
+======================================================================
+58. Write a JAVA program to print all unique elements in the array.
+import java.util.*;
+class Unique
+{ 
+    public static void main(String[] args)
+    {    
+       int count;
+       Scanner sc=new Scanner(System.in);
+       System.out.println("enter array size");
+       int n=sc.nextInt();
+       int arr[]=new int[n];
+       System.out.println("enter elements");
+       for(int i=0;i<n;i++)
+       {
+          arr[i]=sc.nextInt();
+       }
+      System.out.println("unique numbers");
+      int max=0;
+      for(int i=0;i<n;i++)
+       {
+          if(max<arr[i]){
+            max=arr[i];
+          }
+       }
+      for(int i=0;i<=max;i++)
+        {
+          count=0;
+          for(int j=0;j<n;j++)
+            {
+              if(i==arr[j])
+              {
+                count++;
+              }
+              }
+          if(count==1)
+              {
+                System.out.println(i);
+              }
+              }
+              
+            }
+        }
+
+======================================================================
+59. Write a JAVA program to count total number of duplicate elements in an 
+array.
+//find duplicate numbers in array
+import java.util.*;
+class Unique
+{ 
+    public static void main(String[] args)
+    {    
+       int count;
+       Scanner sc=new Scanner(System.in);
+       System.out.println("enter array size");
+       int n=sc.nextInt();
+       int arr[]=new int[n];
+       System.out.println("enter elements");
+       for(int i=0;i<n;i++)
+       {
+          arr[i]=sc.nextInt();
+       }
+      System.out.println("unique numbers");
+      int max=0,count1=0;
+      for(int i=0;i<n;i++)
+       {
+          if(max<arr[i]){
+            max=arr[i];
+          }
+       }
+      for(int i=0;i<=max;i++)
+        {
+          count=0;
+          for(int j=0;j<n;j++)
+            {
+              if(i==arr[j])
+              {
+                count++;
+              }
+              }
+          if(count>1)
+              {
+                count1++;
+              }
+              }
+      System.out.println(count1);
+              
+            }
+        }
+
+
+======================================================================
+
+
+
+
+
+
+
+
+
